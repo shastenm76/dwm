@@ -1,0 +1,93 @@
+##SXHKD_KEYS_START
+#i
+#
+
+# Favorite Apps ("alt + o + {x,y,z}")
+
+# Iriunwebcam
+alt + o; {c, g, i, l, m, o, p, v}
+  {code, google-chrome-stable, iriunwebcam, l3afpad, pavucontrol, postman, virt-manager}
+
+#Tmux
+alt + e; {h, v}
+    {sm-hsp, sm-vsp}
+#obs
+alt + shift + o
+    obs-studio
+
+# OBS
+#alt + o
+#	obs-studio
+#
+## Virt Manager
+#alt + v
+#	virt-manager  
+#
+## Xpad
+#alt + x
+#	xpad
+
+# Browser qutebrowser
+alt + b
+    sh /home/shasten/.local/bin/scripts/dmenu/bmks
+
+# Nyxt
+alt + shift + b
+	flatpak run engineer.atlas.Nyxt
+
+#Chat
+alt + shift + c
+    sh /home/shasten/.local/bin/scripts/dmenu/chat
+
+#Frequent
+alt + f
+    sh /home/shasten/.local/bin/scripts/dmenu/frequent
+
+# Files
+alt + shift + f
+    sh /home/shasten/.local/bin/scripts/dmenu/files.sh
+
+#dwm_keys
+#alt + h 
+#    sh /home/shasten/.local/bin/scripts/dmenu/keys/dwm_keys
+
+# Change Keyboard Layout
+# alt + l
+#	sh /home/shasten/.local/bin/scripts/dmenu/keyboard
+
+#nvim_keys
+alt + n
+    sh /home/shasten/.local/bin/scripts/dmenu/keys/nvim_keys
+    
+# Bash Pipes
+alt + p 
+    st -e /home/shasten/.local/bin/scripts/pipes.sh
+
+# ytfzf
+alt + y
+    sh /home/shasten/.local/bin/scripts/ytfzf
+
+# Log-out
+alt + super + Escape
+	sh /home/shasten/.local/bin/scripts/dmenu/logout
+
+## Set volume Controls
+#alt + shift + j
+#	pactl set-sink-volume @DEFAULT_SINK@ -5%
+#alt + shift + k
+#	pactl set-sink-volume @DEFAULT_SINK@ +5%
+#
+#alt + shift + m
+#	pactl set-sink-mute @DEFAULT_SINK@ toggle
+#alt + shift + n
+#	sh /home/shasten/.local/bin/scripts/volume-sink
+#
+# Decrease/Increase Opacity With Picom
+alt + shift + t 
+	sh /home/shasten/.local/bin/scripts/trans_inc
+
+alt + shift + y
+	sh /home/shasten/.local/bin/scripts/trans_dec
+
+##SXHKD_KEYS_END
+
